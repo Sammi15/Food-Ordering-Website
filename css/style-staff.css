@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+* {
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-image: url('../images/background.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+.navDiv {
+    display: flex;
+    padding: 0%;
+}
+
+.navBarDiv {
+    cursor: pointer;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    top: 0%;
+}
+
+.navBar {
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: 2px 2px 2px black;
+    position: fixed;
+    top: 0%;
+}
+
+.navBtn {
+    outline: none;
+    border: none;
+    padding: 0%;
+    background-color: transparent;
+    margin: 0%;
+}
+
+.navBtn:focus {
+    outline: none;
+    border: none;
+}
+
+.btnText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.navLinkText{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.headerText {
+    font-family: 'Montserrat', sans-serif;
+    margin: auto 0;
+    font-weight: 600;
+}
+
+@media (min-width:1000px) {
+    .btnText {
+        display: none;
+    }
+}
+
+@media (max-width:700px) {
+    .headerText {
+        display: none;
+    }
+}
+
+.listItem {
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+
+ul li a {
+    color: black;
+    padding: 0%;
+    display: flex;
+}
+
+ul li a:hover {
+    color: rgb(3, 11, 54);
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+ul li a:active {
+    color: rgb(3, 11, 54);
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width:700px) {
+    li a {
+        text-align: left;
+        border-top: 1px solid black;
+        width: 100%;
+        margin: 1px 0;
+        font-size: small;
+    }
+}
+
+@media (min-width:1000px) {
+    li a {
+        border-radius: 30px;
+    }
+}
+
+.contentDiv {
+    padding-top: 60px;
+    padding-bottom: 35px;
+    color: inherit;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 0.2em;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 2px 2px 8px black;
+    border: 2px solid gray;
+}
+
+@media (max-width:1000px) {
+    .contentDiv{
+        padding-top: 3em;
+        width: 90%;
+    }
+}
+
+@media (min-width:1000px) {
+    .contentDiv{
+        padding-top: 6em;
+    }
+}
+
+
+.contentDivi {
+    padding-top: 60px;
+    padding-bottom: 35px;
+    color: inherit;
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+    /* text-align: center; */
+    padding: 0.2em;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 2px 2px 8px black;
+    border: 2px solid gray;
+}
+
+@media (max-width:1000px) {
+    .contentDivi{
+        padding-top: 8em;
+    }
+}
+
+@media (min-width:1000px) {
+    .contentDivi{
+        padding-top: 4em;
+    }
+}
+
+.containerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    /* font-weight: bold; */
+    padding: 2px 0;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    backdrop-filter: blur(50px);
+    width: 100%;
+}
+
+@media(max-width:1000px) {
+    .footer {
+        font-size: x-small;
+    }
+}
+
+.serviceCard {
+    border: 1px ridge black;
+    width: 40%;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(130, 214, 132);
+}
+
+@media(max-width:1000px) {
+    .serviceCard {
+        width: 45%;
+    }
+}
+
+@media(min-width:1000px) {
+    .serviceCard {
+        padding: 2.5em;
+        width: 45%;
+        height: 10em;
+    }
+}
+
+.cardContent {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    color: inherit;
+}
+
+.hrLine {
+    margin: 0%;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.cardContent {
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    font-weight: 600;
+    margin: 0%;
+    padding: 0%;
+}
+
+@media (min-width:1000px) {
+    .cardContent{
+        font-size: xx-large;
+    }
+}
+
+.cardCount
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    margin: 0%;
+    padding: 0%;
+}
+
+@media (min-width:1000px) {
+    .cardCount{
+        font-size: x-large;
+    }
+}
+
+
+.navDrpItem
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: inline;
+    align-items: center;
+    align-content: center;
+}
+
+.navLink
+{
+    display: flex;
+    align-items: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: rgb(0, 251, 255);
+}
+
+.footer a:hover{
+    text-decoration: none;
+    color: rgb(0, 251, 255);
+}
+
+
+
+
+.tbl1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 27px;
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: none;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+@media (max-width:1000px) {
+    .tbl1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+.fldst {
+    width: 26%;
+    border: 1px solid black;
+    padding: 0.2em;
+    margin: 1em;
+    box-shadow: 2px 2px 6px rgb(0 0 0 / 61%);
+    
+    /* font-family: colonna mt; */
+    /* margin: 30px; */
+  }
+
+  @media (max-width:1000px) {
+      .fldst{
+          width: 100%;
+      }
+  }
+  
+  .fldstProfile{
+    /* border: 1px solid black; */
+    /* padding: 0.2em; */
+    box-shadow: 2px 2px 6px rgb(0 0 0 / 61%);
+  }
+  
+  .fldst:hover
+  {
+    background-color: rgba(191, 179, 179, 0.129);
+  }
+  
+  .fldst_table
+  {
+    padding: 1em;
+    /* background-color: rgba(87, 94, 96, 0.53); */
+    border: 2px double black;
+    width: 45%;
+  }
+  
+  .fldst_detail
+  {
+    padding: 1em;
+    /* background-color: rgba(93, 84, 84, 0.483); */
+    border: 2px double black;
+    width: 100%;
+    min-height: 30.4em;
+  }
+  
+  
+  .legnd1
+  {
+    width: auto;
+    margin-left: 40px;
+  }
+  
+  .fldst_main
+  {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 0.5em;
+  }
+  
+  .fldst_main_profile{
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  .orderProducts{
+      height: 8em;
+      overflow: hidden;
+      overflow-y: scroll;
+      border: 2px solid black;
+      border-radius: 5px;
+      margin: 0%;
+      padding: 0.2em;
+
+  }
+  .orderProducts::-webkit-scrollbar{
+      display: none;
+  }
+
+
+  .btn1
+{
+  color: white;
+  margin: 1px;
+  margin-right: 1%;
+  margin-left: 1.5%;
+  outline: none;
+  width: 100%;
+  border: none;
+  /* box-shadow: none; */
+  box-shadow: 2px 2px 6px rgba(83, 81, 81, 0.768);
+  background: linear-gradient(45deg, #000000, #3f4041);
+}
+.btn1:hover
+{
+  color: white;
+  margin: 1px;
+  margin-right: 1%;
+  margin-left: 1.5%;
+  outline: none;
+  border: none;
+  box-shadow: 2px 2px 6px rgba(83, 81, 81, 0.768);
+  background: linear-gradient(45deg, #3f4041, #000000);
+}
+.btn1:focus
+{
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.head_div {
+    display: flex;
+}
+
+@media (max-width:1000px) {
+    .head_div {
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+#LoginForm input{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    width: 20em;
+}
+
+#LoginForm label{
+    display: flex;
+    padding-left: 11em;
+    margin-bottom: 0%;
+    margin-top: 0.3em;
+}
+
+@media (max-width:1000px) {
+    #LoginForm label{
+        padding-left: 3em;
+        margin-top: 0.4em;
+    }
+}
+
+.headerTextMatch{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-shadow: 2px 2px 3px grey;
+}
+
+@media (max-width:1000px) {
+    .headerTextMatch{
+        font-size: 1.7em;
+    }
+}
+
+
+.input_button_check
+{
+  color: white;
+  margin: 1px;
+  margin-right: 1%;
+  margin-left: 1.5%;
+  outline: none;
+  border: none;
+  line-height: 35px;
+  border-radius: 5px;
+  /* box-shadow: none; */
+  box-shadow: 2px 2px 6px rgba(83, 81, 81, 0.768);
+  background: linear-gradient(45deg, #000000, #3f4041);
+}
+.input_button_check:hover
+{
+  color: white;
+  margin: 1px;
+  margin-right: 1%;
+  margin-left: 1.5%;
+  outline: none;
+  border: none;
+  line-height: 35px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px rgba(83, 81, 81, 0.768);
+  background: linear-gradient(45deg, #3f4041, #000000);
+}
+.input_button_check:focus
+{
+  border: none;
+  outline: none;
+  line-height: 35px;
+  border-radius: 5px;
+  box-shadow: none;
+}
